@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SchemeUserState</key>
+	<dict>
+		<key>Notification - TrainAlert WatchKit App.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>2</integer>
+		</dict>
+		<key>TrainAlert - Glance.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<true/>
+			<key>orderHint</key>
+			<integer>3</integer>
+		</dict>
+		<key>TrainAlert WatchKit App.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
+		<key>TrainAlert.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>0</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>C4E1B5CE1B02755A00E9F137</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>C4E1B5F91B02756E00E9F137</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>D4B9E65A1AFEA5A100BDCFC5</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>D4B9E6731AFEA5A100BDCFC5</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>D4B9E6961AFEA5E600BDCFC5</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+	</dict>
+</dict>
+</plist>

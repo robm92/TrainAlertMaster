@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="7702" systemVersion="14C109" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="3737"/>
+    </dependencies>
+    <scenes>
+        <!--Interface Controller-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController">
+                    <items>
+                        <label alignment="left" text="Platform" id="7eY-m5-wIz"/>
+                        <label alignment="left" text="Label" id="iY4-ee-tCg"/>
+                        <button width="1" alignment="left" title="update" id="b6c-DF-JA2">
+                            <connections>
+                                <action selector="btnUpdate" destination="AgC-eL-Hgc" id="v3r-fF-gam"/>
+                            </connections>
+                        </button>
+                    </items>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <connections>
+                        <outlet property="lblPlatform" destination="iY4-ee-tCg" id="qUI-cd-Jfo"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="235" y="347"/>
+        </scene>
+        <!--Glance Interface Controller-->
+        <scene sceneID="BOz-TT-tkC">
+            <objects>
+                <glanceController spacing="0.0" topTemplateType="body1Group" bottomTemplateType="body1Group" id="0uZ-2p-rRc" customClass="GlanceController">
+                    <items>
+                        <label alignment="left" text="Platform:" id="ddB-Gj-Vfn"/>
+                        <group alignment="left" id="yDd-CO-nGq">
+                            <items>
+                                <label alignment="center" verticalAlignment="center" text="1" textAlignment="center" id="fIZ-Gd-oaG">
+                                    <color key="textColor" red="0.14931442310000001" green="0.74682277370000005" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <fontDescription key="font" type="system" pointSize="21"/>
+                                </label>
+                            </items>
+                        </group>
+                        <label alignment="left" text="Train Arrives in:" id="9ne-1Y-lbp"/>
+                        <group alignment="left" id="Mvy-tq-8KS">
+                            <items>
+                                <timer alignment="center" verticalAlignment="center" id="NVz-tp-1Fb">
+                                    <color key="textColor" red="0.14931442310000001" green="0.74682277370000005" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <fontDescription key="font" type="system" pointSize="26"/>
+                                </timer>
+                            </items>
+                        </group>
+                    </items>
+                    <edgeInsets key="margins" left="0.0" right="0.0" top="0.0" bottom="14"/>
+                    <connections>
+                        <outlet property="lblPlatform" destination="fIZ-Gd-oaG" id="pCx-il-jXb"/>
+                        <outlet property="lblPlatformTitle" destination="ddB-Gj-Vfn" id="bLZ-Te-ZKM"/>
+                        <outlet property="lblSubTitle" destination="9ne-1Y-lbp" id="FWR-7b-FaK"/>
+                        <outlet property="timer" destination="NVz-tp-1Fb" id="86x-gT-XA8"/>
+                    </connections>
+                </glanceController>
+            </objects>
+            <point key="canvasLocation" x="235" y="672"/>
+        </scene>
+        <!--Static Notification Interface Controller-->
+        <scene sceneID="AEw-b0-oYE">
+            <objects>
+                <notificationController id="YCC-NB-fut">
+                    <items>
+                        <label alignment="left" text="Alert Label" id="XkS-y5-khE"/>
+                    </items>
+                    <notificationCategory key="notificationCategory" identifier="myCategory" id="JfB-70-Muf"/>
+                    <connections>
+                        <outlet property="notificationAlertLabel" destination="XkS-y5-khE" id="49B-RR-99y"/>
+                        <segue destination="gdX-wl-uQE" kind="relationship" relationship="dynamicNotificationInterface" id="fKh-qV-3T2"/>
+                    </connections>
+                </notificationController>
+            </objects>
+            <point key="canvasLocation" x="235" y="1001"/>
+        </scene>
+        <!--Notification Controller-->
+        <scene sceneID="KIl-fV-djm">
+            <objects>
+                <controller id="gdX-wl-uQE" customClass="NotificationController"/>
+            </objects>
+            <point key="canvasLocation" x="553" y="1001"/>
+        </scene>
+    </scenes>
+</document>
