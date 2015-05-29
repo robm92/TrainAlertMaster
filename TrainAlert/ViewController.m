@@ -74,15 +74,15 @@
     
     lblStatus.text = dj.Status;
     lblPlatform.text = [NSString stringWithFormat:@"%ld",(long)dj.Platform];
-    lblEstimateDeparture.text = [NSString stringWithFormat:@"%ld",(long)dj.Departure_estimate];
+    lblEstimateDeparture.text = [NSString stringWithFormat:@"%ld minutes",(long)dj.Departure_estimate];
     lblDepartureTime.text = [self dateToTime:dj.Departure_time];
     
     //pass data to app group for Watch
     NSUserDefaults *myDefaults = [[NSUserDefaults alloc]initWithSuiteName:@"group.com.Rob.TrainAlert"];
 
-    NSDate *ArrivalTime = dj.Arrival_time;
-    [myDefaults setObject: ArrivalTime forKey:@"ArrivalTime"];
+    [myDefaults setObject: dj.Departure_time forKey:@"DepartureTime"];
     [myDefaults setObject:[NSString stringWithFormat:@"%ld",(long)dj.Platform] forKey:@"Platform"];
+    [myDefaults setObject:dj.Status forKey:@"Status"];
     
 }
 

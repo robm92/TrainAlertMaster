@@ -10,29 +10,29 @@
 	<string>project</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>EAAD54F2DC4BD388BB44BA9BCF157936C7E378BF</key>
-		<string>https://github.com/robm92/TrainAlert-master.git</string>
+		<key>C750A6A0707C940B809E640FC2C17684266F59AA</key>
+		<string>https://github.com/robm92/TrainAlertMaster.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>TrainAlert.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>EAAD54F2DC4BD388BB44BA9BCF157936C7E378BF</key>
+		<key>C750A6A0707C940B809E640FC2C17684266F59AA</key>
 		<string>../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>https://github.com/robm92/TrainAlert-master.git</string>
+	<string>https://github.com/robm92/TrainAlertMaster.git</string>
 	<key>IDESourceControlProjectVersion</key>
 	<integer>111</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>EAAD54F2DC4BD388BB44BA9BCF157936C7E378BF</string>
+	<string>C750A6A0707C940B809E640FC2C17684266F59AA</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>EAAD54F2DC4BD388BB44BA9BCF157936C7E378BF</string>
+			<string>C750A6A0707C940B809E640FC2C17684266F59AA</string>
 			<key>IDESourceControlWCCName</key>
 			<string>TrainAlertMaster</string>
 		</dict>

@@ -40,13 +40,30 @@
                                 </label>
                             </items>
                         </group>
-                        <label alignment="left" text="Train Arrives in:" id="9ne-1Y-lbp"/>
-                        <group alignment="left" id="Mvy-tq-8KS">
+                        <label alignment="left" text="Train Leaves in:" id="9ne-1Y-lbp"/>
+                        <group alignment="left" layout="vertical" id="Mvy-tq-8KS">
                             <items>
-                                <timer alignment="center" verticalAlignment="center" id="NVz-tp-1Fb">
-                                    <color key="textColor" red="0.14931442310000001" green="0.74682277370000005" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                    <fontDescription key="font" type="system" pointSize="26"/>
-                                </timer>
+                                <group width="1" alignment="left" layout="vertical" id="gRI-we-6xt">
+                                    <items>
+                                        <timer alignment="center" id="NVz-tp-1Fb">
+                                            <color key="textColor" red="0.14931442310000001" green="0.74682277370000005" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            <fontDescription key="font" type="system" pointSize="26"/>
+                                        </timer>
+                                    </items>
+                                </group>
+                                <group width="1" alignment="left" id="Yrq-DC-3eA">
+                                    <items>
+                                        <label alignment="left" text="Status:" id="aJG-CE-BCq"/>
+                                    </items>
+                                </group>
+                                <group width="1" alignment="center" id="i0a-6K-jJj">
+                                    <items>
+                                        <label alignment="center" id="U4Z-U9-CdM">
+                                            <color key="textColor" red="0.14931442310000001" green="0.74682277370000005" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            <fontDescription key="font" type="system" pointSize="16"/>
+                                        </label>
+                                    </items>
+                                </group>
                             </items>
                         </group>
                     </items>
@@ -54,6 +71,7 @@
                     <connections>
                         <outlet property="lblPlatform" destination="fIZ-Gd-oaG" id="pCx-il-jXb"/>
                         <outlet property="lblPlatformTitle" destination="ddB-Gj-Vfn" id="bLZ-Te-ZKM"/>
+                        <outlet property="lblStatus" destination="U4Z-U9-CdM" id="pij-K8-gds"/>
                         <outlet property="lblSubTitle" destination="9ne-1Y-lbp" id="FWR-7b-FaK"/>
                         <outlet property="timer" destination="NVz-tp-1Fb" id="86x-gT-XA8"/>
                     </connections>

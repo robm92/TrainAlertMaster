@@ -14,5 +14,6 @@
 @property (weak, nonatomic) IBOutlet WKInterfaceLabel *lblPlatform;
 @property (weak, nonatomic) IBOutlet WKInterfaceLabel *lblSubTitle;
 @property (weak, nonatomic) IBOutlet WKInterfaceTimer *timer;
+@property (weak, nonatomic) IBOutlet WKInterfaceLabel *lblStatus;
 
 @end
