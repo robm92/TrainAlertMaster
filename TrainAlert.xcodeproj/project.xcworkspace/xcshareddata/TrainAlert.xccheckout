@@ -7,14 +7,14 @@
 	<key>IDESourceControlProjectIdentifier</key>
 	<string>DFBC8B8A-4BB2-4EF6-B4AF-65A2BFABA33D</string>
 	<key>IDESourceControlProjectName</key>
-	<string>project</string>
+	<string>TrainAlert</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>C750A6A0707C940B809E640FC2C17684266F59AA</key>
 		<string>https://github.com/robm92/TrainAlertMaster.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>TrainAlert.xcodeproj/project.xcworkspace</string>
+	<string>TrainAlert.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>C750A6A0707C940B809E640FC2C17684266F59AA</key>

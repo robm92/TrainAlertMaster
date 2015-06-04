@@ -11,6 +11,8 @@
 
 @interface InterfaceController : WKInterfaceController
 @property (weak, nonatomic) IBOutlet WKInterfaceLabel *lblPlatform;
-- (IBAction)btnUpdate;
+@property (weak, nonatomic) IBOutlet WKInterfaceLabel *lblStatus;
+@property (weak, nonatomic) IBOutlet WKInterfaceTimer *timer;
+@property (weak, nonatomic) IBOutlet WKInterfaceLabel *lblReference;
 
 @end

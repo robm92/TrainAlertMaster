@@ -11,29 +11,40 @@
 
 @interface InterfaceController()
 {
-    
+    NSString* container;
+    NSUserDefaults* defaults;
 }
 
 @end
 
 
 @implementation InterfaceController
-@synthesize lblPlatform;
+@synthesize lblPlatform,lblStatus,lblReference;
 
 - (void)awakeWithContext:(id)context {
     [super awakeWithContext:context];
 
     // Configure interface objects here.
-    NSString* container = @"group.com.Rob.TrainAlert";
-    NSUserDefaults* defaults = [[NSUserDefaults alloc] initWithSuiteName:container];
+    container = @"group.com.Rob.TrainAlert";
+    defaults = [[NSUserDefaults alloc] initWithSuiteName:container];
     
     lblPlatform.text = [defaults valueForKey:@"Platform"];
+    [self.timer setDate:[defaults valueForKey:@"DepartureTime"]];
+    [self.timer start];
+    lblStatus.text = [defaults valueForKey:@"Status"];
+    lblReference.text = [defaults valueForKey:@"Reference"];
 
 }
 
 - (void)willActivate {
     // This method is called when watch view controller is about to be visible to user
     [super willActivate];
+    
+    lblPlatform.text = [defaults valueForKey:@"Platform"];
+    [self.timer setDate:[defaults valueForKey:@"DepartureTime"]];
+    [self.timer start];
+    lblStatus.text = [defaults valueForKey:@"Status"];
+    lblReference.text = [defaults valueForKey:@"Reference"];
 }
 
 - (void)didDeactivate {
@@ -41,13 +52,7 @@
     [super didDeactivate];
 }
 
-- (IBAction)btnUpdate {
-    
-    NSString* container = @"group.com.Rob.TrainAlert";
-    NSUserDefaults* defaults = [[NSUserDefaults alloc] initWithSuiteName:container];
 
-    lblPlatform.text = [defaults valueForKey:@"Platform"];
-}
 @end
 
 

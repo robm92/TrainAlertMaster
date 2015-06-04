@@ -18,6 +18,7 @@
 		C4E1B6031B02756E00E9F137 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4E1B6011B02756E00E9F137 /* Interface.storyboard */; };
 		C4E1B6051B02756E00E9F137 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C4E1B6041B02756E00E9F137 /* Images.xcassets */; };
 		C4E1B6081B02756E00E9F137 /* TrainAlert WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = C4E1B5E81B02756E00E9F137 /* TrainAlert WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		C4E63A801B19CC870052D505 /* iAd.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4E63A7F1B19CC870052D505 /* iAd.framework */; };
 		D4B9E6611AFEA5A100BDCFC5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D4B9E6601AFEA5A100BDCFC5 /* main.m */; };
 		D4B9E6641AFEA5A100BDCFC5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D4B9E6631AFEA5A100BDCFC5 /* AppDelegate.m */; };
 		D4B9E6671AFEA5A100BDCFC5 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D4B9E6661AFEA5A100BDCFC5 /* ViewController.m */; };
@@ -87,6 +88,7 @@
 		C4E1B6001B02756E00E9F137 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C4E1B6021B02756E00E9F137 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
 		C4E1B6041B02756E00E9F137 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		C4E63A7F1B19CC870052D505 /* iAd.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = iAd.framework; path = System/Library/Frameworks/iAd.framework; sourceTree = SDKROOT; };
 		D4B9E65B1AFEA5A100BDCFC5 /* TrainAlert.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TrainAlert.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D4B9E65F1AFEA5A100BDCFC5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D4B9E6601AFEA5A100BDCFC5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -118,6 +120,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C4E63A801B19CC870052D505 /* iAd.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -177,6 +180,7 @@
 		D4B9E6521AFEA5A100BDCFC5 = {
 			isa = PBXGroup;
 			children = (
+				C4E63A7F1B19CC870052D505 /* iAd.framework */,
 				C47D5F1C1B136336006DC181 /* CoreLocation.framework */,
 				D4B9E65D1AFEA5A100BDCFC5 /* TrainAlert */,
 				D4B9E6771AFEA5A100BDCFC5 /* TrainAlertTests */,

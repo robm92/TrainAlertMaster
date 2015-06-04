@@ -7,7 +7,7 @@
 //
 
 #import "ViewController.h"
-#import "Station.h"
+#import "Station.h"//
 #import <CoreLocation/CoreLocation.h>
 #import "destinationViewController.h"
 
@@ -18,15 +18,20 @@
     CLLocationManager *locationManager;
     NSString *userLong;
     NSString *userLat;
+    NSString *reference;
+    NSUserDefaults *myDefaults;
 }
 
 @end
 
 @implementation ViewController
-@synthesize btnDepart,btnDestination,lblDepartureTime,lblEstimateDeparture,lblPlatform,lblSource,lblStatus;
+@synthesize btnDepart,btnDestination,lblDepartureTime,lblEstimateDeparture,lblPlatform,lblSource,lblStatus,txtReference;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    //init app group
+    myDefaults = [[NSUserDefaults alloc]initWithSuiteName:@"group.com.Rob.TrainAlert"];
     
     //init array
     stationArray = [[NSMutableArray alloc] init];
@@ -38,6 +43,11 @@
     btnDestination.clipsToBounds = YES;
     btnDepart.layer.cornerRadius = 10;
     btnDepart.clipsToBounds = YES;
+    
+    // Add a "textFieldDidChange" notification method to the text field control.
+    [txtReference addTarget:self
+                  action:@selector(textFieldDidChange:)
+        forControlEvents:UIControlEventEditingChanged];
     
     locationManager = [[CLLocationManager alloc] init];
     [locationManager requestAlwaysAuthorization];
@@ -62,6 +72,12 @@
     }
 }
 
+- (void)textFieldDidChange:(NSNotification *)notification {
+    //booking reference changed
+    reference = [txtReference text];
+    [myDefaults setObject:reference forKey:@"Reference"];
+}
+
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
@@ -78,7 +94,6 @@
     lblDepartureTime.text = [self dateToTime:dj.Departure_time];
     
     //pass data to app group for Watch
-    NSUserDefaults *myDefaults = [[NSUserDefaults alloc]initWithSuiteName:@"group.com.Rob.TrainAlert"];
 
     [myDefaults setObject: dj.Departure_time forKey:@"DepartureTime"];
     [myDefaults setObject:[NSString stringWithFormat:@"%ld",(long)dj.Platform] forKey:@"Platform"];

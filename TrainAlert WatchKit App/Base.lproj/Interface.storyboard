@@ -10,17 +10,43 @@
             <objects>
                 <controller id="AgC-eL-Hgc" customClass="InterfaceController">
                     <items>
-                        <label alignment="left" text="Platform" id="7eY-m5-wIz"/>
-                        <label alignment="left" text="Label" id="iY4-ee-tCg"/>
-                        <button width="1" alignment="left" title="update" id="b6c-DF-JA2">
-                            <connections>
-                                <action selector="btnUpdate" destination="AgC-eL-Hgc" id="v3r-fF-gam"/>
-                            </connections>
-                        </button>
+                        <label alignment="left" text="Booking Reference:" id="cVV-j8-1hl">
+                            <fontDescription key="font" type="system" pointSize="14"/>
+                        </label>
+                        <label alignment="center" text="JHGJHG" textAlignment="center" numberOfLines="2" id="0qs-f2-hFj">
+                            <color key="textColor" red="0.14931442310000001" green="0.74682277370000005" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <fontDescription key="font" type="system" pointSize="16"/>
+                        </label>
+                        <label alignment="left" text="Platform:" id="n7r-7k-DD2">
+                            <fontDescription key="font" type="system" pointSize="16"/>
+                        </label>
+                        <label alignment="center" text="1" textAlignment="center" id="rLc-Lg-el6">
+                            <color key="textColor" red="0.14931442310000001" green="0.74682277370000005" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <fontDescription key="font" type="system" pointSize="16"/>
+                        </label>
+                        <label alignment="left" text="Train Leaves in:" id="XNL-B3-yNH"/>
+                        <timer alignment="center" id="gKV-Ap-71V">
+                            <color key="textColor" red="0.14931442310000001" green="0.74682277370000005" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <fontDescription key="font" type="system" pointSize="21"/>
+                        </timer>
+                        <group alignment="left" contentMode="left" layout="vertical" id="u1c-4V-aED">
+                            <items>
+                                <label alignment="left" text="Status:" id="dnx-wU-tWU">
+                                    <fontDescription key="font" type="system" pointSize="16"/>
+                                </label>
+                            </items>
+                        </group>
+                        <label alignment="center" text="ON TIME" textAlignment="center" id="HfI-TF-kEy">
+                            <color key="textColor" red="0.14931442310000001" green="0.74682277370000005" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <fontDescription key="font" type="system" pointSize="16"/>
+                        </label>
                     </items>
                     <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     <connections>
-                        <outlet property="lblPlatform" destination="iY4-ee-tCg" id="qUI-cd-Jfo"/>
+                        <outlet property="lblPlatform" destination="rLc-Lg-el6" id="24P-Fx-Y56"/>
+                        <outlet property="lblReference" destination="0qs-f2-hFj" id="9kW-7B-jj6"/>
+                        <outlet property="lblStatus" destination="HfI-TF-kEy" id="HJR-6q-kqr"/>
+                        <outlet property="timer" destination="gKV-Ap-71V" id="X5y-Vg-N0M"/>
                     </connections>
                 </controller>
             </objects>

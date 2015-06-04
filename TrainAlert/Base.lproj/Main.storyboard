@@ -96,6 +96,20 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dlg-7G-ztb">
+                                <rect key="frame" x="16" y="319" width="343" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Booking Reference:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6j9-0n-4QG">
+                                <rect key="frame" x="16" y="290" width="151" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <adBannerView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" translatesAutoresizingMaskIntoConstraints="NO" id="dDQ-Nd-JAn">
+                                <rect key="frame" x="27" y="617" width="320" height="50"/>
+                            </adBannerView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
@@ -110,19 +124,26 @@
                             <constraint firstItem="P1i-Dh-nhb" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="S7h-iW-paT"/>
                             <constraint firstItem="e2y-pR-RrR" firstAttribute="top" secondItem="RJO-dM-0mw" secondAttribute="bottom" constant="8" symbolic="YES" id="TSj-Zc-k10"/>
                             <constraint firstItem="RHk-vk-6ZG" firstAttribute="leading" secondItem="e2y-pR-RrR" secondAttribute="trailing" constant="8" symbolic="YES" id="TX1-8M-kiY"/>
+                            <constraint firstItem="dlg-7G-ztb" firstAttribute="trailing" secondItem="P1i-Dh-nhb" secondAttribute="trailing" id="U1C-Mg-jTb"/>
                             <constraint firstItem="P1i-Dh-nhb" firstAttribute="top" secondItem="juJ-rP-hk4" secondAttribute="bottom" constant="8" symbolic="YES" id="Wmn-83-nEy"/>
+                            <constraint firstItem="6j9-0n-4QG" firstAttribute="leading" secondItem="dlg-7G-ztb" secondAttribute="leading" id="XMS-je-lQN"/>
                             <constraint firstItem="eHh-zD-lCb" firstAttribute="leading" secondItem="Sgm-Gd-M49" secondAttribute="trailing" constant="8" symbolic="YES" id="cb7-xW-S4m"/>
                             <constraint firstItem="Sgm-Gd-M49" firstAttribute="baseline" secondItem="eHh-zD-lCb" secondAttribute="baseline" id="fLa-vR-Pu8"/>
                             <constraint firstItem="juJ-rP-hk4" firstAttribute="trailing" secondItem="P1i-Dh-nhb" secondAttribute="trailing" id="fTr-7X-1cN"/>
                             <constraint firstItem="Zqb-i7-XgZ" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" symbolic="YES" id="grI-GJ-V5V"/>
+                            <constraint firstItem="dlg-7G-ztb" firstAttribute="leading" secondItem="e2y-pR-RrR" secondAttribute="leading" id="hIH-q9-XLJ"/>
                             <constraint firstItem="RHk-vk-6ZG" firstAttribute="baseline" secondItem="e2y-pR-RrR" secondAttribute="baseline" id="hRF-1g-Lc8"/>
+                            <constraint firstItem="dDQ-Nd-JAn" firstAttribute="centerX" secondItem="dlg-7G-ztb" secondAttribute="centerX" id="il0-Q3-COW"/>
+                            <constraint firstItem="dlg-7G-ztb" firstAttribute="top" secondItem="6j9-0n-4QG" secondAttribute="bottom" constant="8" symbolic="YES" id="j65-PU-WZr"/>
                             <constraint firstItem="Ukl-IB-Cox" firstAttribute="leading" secondItem="LJG-SZ-Sex" secondAttribute="trailing" constant="8" symbolic="YES" id="n3y-O0-cq1"/>
                             <constraint firstItem="Sgm-Gd-M49" firstAttribute="leading" secondItem="LJG-SZ-Sex" secondAttribute="leading" id="nGp-UD-WYo"/>
                             <constraint firstItem="P1i-Dh-nhb" firstAttribute="top" secondItem="6ZE-G7-eJX" secondAttribute="top" id="rHS-Tl-tK3"/>
                             <constraint firstItem="GAi-2s-IOP" firstAttribute="baseline" secondItem="RJO-dM-0mw" secondAttribute="baseline" id="ukf-dR-BGu"/>
                             <constraint firstItem="GAi-2s-IOP" firstAttribute="leading" secondItem="RJO-dM-0mw" secondAttribute="trailing" constant="8" symbolic="YES" id="v7V-4o-izz"/>
+                            <constraint firstItem="dDQ-Nd-JAn" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="vzH-qh-6ru"/>
                             <constraint firstItem="LJG-SZ-Sex" firstAttribute="top" secondItem="P1i-Dh-nhb" secondAttribute="bottom" constant="54" id="w0r-Aj-2dA"/>
                             <constraint firstItem="LJG-SZ-Sex" firstAttribute="baseline" secondItem="Ukl-IB-Cox" secondAttribute="baseline" id="w5G-qh-wmO"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="dlg-7G-ztb" secondAttribute="bottom" constant="318" id="wOq-UY-0zi"/>
                             <constraint firstItem="juJ-rP-hk4" firstAttribute="leading" secondItem="Zqb-i7-XgZ" secondAttribute="trailing" constant="8" symbolic="YES" id="ywB-Jp-9RK"/>
                             <constraint firstItem="Sgm-Gd-M49" firstAttribute="top" secondItem="LJG-SZ-Sex" secondAttribute="bottom" constant="8" symbolic="YES" id="zgc-oc-0Iu"/>
                         </constraints>
@@ -136,6 +157,7 @@
                         <outlet property="lblPlatform" destination="GAi-2s-IOP" id="aJ5-pd-iYV"/>
                         <outlet property="lblStatus" destination="RHk-vk-6ZG" id="NnJ-gK-vgw"/>
                         <outlet property="lstStations" destination="xJI-vR-Y2B" id="QqE-t9-zMB"/>
+                        <outlet property="txtReference" destination="dlg-7G-ztb" id="SfQ-iF-pdB"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

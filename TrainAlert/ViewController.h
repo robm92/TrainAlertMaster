@@ -19,6 +19,7 @@
 @property (weak, nonatomic) IBOutlet UILabel *lblPlatform;
 @property (weak, nonatomic) IBOutlet UILabel *lblStatus;
 @property (weak, nonatomic) IBOutlet UILabel *lblSource;
+@property (weak, nonatomic) IBOutlet UITextField *txtReference;
 
 -(void) setDestination:(DestinationJourney *) dj;
 
