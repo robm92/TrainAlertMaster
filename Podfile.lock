@@ -1,0 +1,13 @@
+PODS:
+  - ChameleonFramework (1.2.0)
+  - TextFieldEffects (0.3.5)
+
+DEPENDENCIES:
+  - ChameleonFramework
+  - TextFieldEffects
+
+SPEC CHECKSUMS:
+  ChameleonFramework: 4d6bf87fcaee176f487176cdccc4229637ec97f0
+  TextFieldEffects: 041713adebd0571d70ffeccbb98cab92e9f5748a
+
+COCOAPODS: 0.37.2

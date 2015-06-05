@@ -14,6 +14,8 @@
 
 @property (weak, nonatomic) IBOutlet UIButton *btnDepart;
 @property (weak, nonatomic) IBOutlet UIButton *btnDestination;
+@property (weak, nonatomic) IBOutlet UILabel *lblArrow;
+
 @property (weak, nonatomic) IBOutlet UILabel *lblDepartureTime;
 @property (weak, nonatomic) IBOutlet UILabel *lblEstimateDeparture;
 @property (weak, nonatomic) IBOutlet UILabel *lblPlatform;

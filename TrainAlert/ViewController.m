@@ -10,6 +10,8 @@
 #import "Station.h"//
 #import <CoreLocation/CoreLocation.h>
 #import "destinationViewController.h"
+#import <SVProgressHUD/SVProgressHUD.h>
+#import <FontAwesomeKit/FontAwesomeKit.h>
 
 @interface ViewController ()
 {
@@ -25,7 +27,7 @@
 @end
 
 @implementation ViewController
-@synthesize btnDepart,btnDestination,lblDepartureTime,lblEstimateDeparture,lblPlatform,lblSource,lblStatus,txtReference;
+@synthesize btnDepart,btnDestination,lblDepartureTime,lblEstimateDeparture,lblPlatform,lblSource,lblStatus,txtReference,lblArrow;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -38,11 +40,14 @@
     dest = [[DestinationJourney alloc] init];
     
     [self.btnDestination setTitle:@"Select Destination" forState:UIControlStateNormal];
-    //round corners of button
+    //round corners of buttons
     btnDestination.layer.cornerRadius = 10;
     btnDestination.clipsToBounds = YES;
     btnDepart.layer.cornerRadius = 10;
     btnDepart.clipsToBounds = YES;
+    
+    //text box delegate
+    self.txtReference.delegate = self;
     
     // Add a "textFieldDidChange" notification method to the text field control.
     [txtReference addTarget:self
@@ -87,7 +92,6 @@
 {
     dest = dj;
     [btnDestination setTitle:dest.Destination_name forState:UIControlStateNormal];
-    
     lblStatus.text = dj.Status;
     lblPlatform.text = [NSString stringWithFormat:@"%ld",(long)dj.Platform];
     lblEstimateDeparture.text = [NSString stringWithFormat:@"%ld minutes",(long)dj.Departure_estimate];
@@ -139,8 +143,10 @@
 
 -(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
+    
     if ([[segue identifier] isEqualToString:@"selectdestination"])
     {
+        
         destinationViewController *dvc = [segue destinationViewController];
         //get first station from array - the closest station (not cool I know...)
         Station * userStation = [stationArray objectAtIndex:0];
@@ -172,9 +178,13 @@
     return [dateFormat stringFromDate:date];
 }
 
-
-
-
-
+//on return, text box hides
+- (BOOL)textFieldShouldReturn:(UITextField *)textField {
+    if (textField == self.txtReference) {
+        [textField resignFirstResponder];
+        return NO;
+    }
+    return YES;
+}
 
 @end
